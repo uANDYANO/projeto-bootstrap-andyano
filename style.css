@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    background-color: #f8f9fa;
+    /* Cor de fundo da página */
+}
+
+.spacer {
+    height: 60px;
+    /* Ajuste a altura para a altura da sua navbar */
+}
+
+/* Navbar fixa */
+.navbar {
+    /* ... (estilos anteriores) ... */
+    position: fixed;
+    /* Define a navbar como fixa */
+    top: 0;
+    /* Posiciona a navbar no topo da tela */
+    width: 100%;
+    /* Largura completa da tela */
+    z-index: 10;
+    /* Define a ordem de sobreposição (acima de outros elementos) */
+}
+
+/* Estilos para a navbar */
+.navbar {
+    background-color: #f8f9fa;
+    /* Cor de fundo da navbar */
+    padding: 15px 0;
+    /* Padding para espaçamento vertical */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra para um efeito 3D */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    /* Fonte em negrito */
+    font-size: 20px;
+    /* Tamanho da fonte */
+    color: #333;
+    /* Cor da fonte */
+}
+
+.navbar-toggler {
+    border: none;
+    /* Remover borda do botão */
+    background-color: transparent;
+    /* Cor de fundo transparente */
+}
+
+.navbar-toggler-icon {
+    background-color: #333;
+    /* Cor do ícone do menu hamburguer */
+}
+
+/* Estilos para os links da navbar */
+.navbar-nav .nav-item .nav-link {
+    color: #333;
+    /* Cor da fonte dos links */
+    font-weight: 500;
+    /* Fonte com peso semi-negrito */
+    padding: 10px 15px;
+    /* Padding para espaçamento entre links */
+    transition: background-color 0.3s ease;
+    /* Transição para efeito hover */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: #e9ecef;
+    /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos para o menu ativo */
+.navbar-nav .nav-item .nav-link.active {
+    background-color: #007bff;
+    /* Cor de fundo do menu ativo */
+    color: #fff;
+    /* Cor da fonte do menu ativo */
+}
+
+/* Estilos do carrossel */
+.carousel-inner img {
+    height: 400px;
+    /* Altura das imagens do carrossel */
+    object-fit: cover;
+    /* Ajustar a imagem para cobrir a área */
+}
+
+br  {
+    margin-bottom: 16px;
+}
+
+/* Estilos do grid de produtos */
+.card {
+    border: none;
+    /* Remover borda dos cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra para efeito 3D */
+}
+
+.card-img-top {
+    height: 200px;
+    /* Altura da imagem do card */
+    object-fit: contain;
+    /* Ajustar a imagem para cobrir a área */
+}
+
+.card-body {
+    padding: 15px;
+    /* Padding para espaçamento interno do card */
+}
+
+.card-title {
+    font-weight: bold;
+    /* Fonte em negrito */
+    color: #333;
+    /* Cor da fonte do título */
+}
+
+/* Animações */
+/* Animação de aparecimento dos cards */
+.card {
+    animation: fadeInUp 0.5s ease-in-out;
+    /* Animação de fade-in e movimento para cima */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+        /* Mover para cima */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        /* Voltar à posição original */
+    }
+}
+
+/* Animação do carrossel */
+.carousel-item {
+    animation: slideInLeft 1s ease-in-out;
+    /* Animação de deslizar da esquerda */
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+        /* Mover para a esquerda */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        /* Voltar à posição original */
+    }
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Aumenta o tamanho do card em 5% */
+    transition: transform 0.3s ease;
+    /* Transição suave para o efeito */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Aumenta a sombra */
+}
+
+.footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra para o efeito box */
+}
+
+.footer .container {
+    padding-bottom: 30px;
+    /* Espaçamento inferior */
+}
+
+.footer ul {
+    list-style: none;
+    /* Remove marcadores da lista */
+    padding: 0;
+    /* Remove padding da lista */
+}
+
+.footer li a {
+    color: #333;
+    /* Cor dos ícones */
+    font-size: 20px;
+    /* Tamanho dos ícones */
+    margin: 0 10px;
+    /* Espaçamento entre ícones */
+}
+
+.footer li a:hover {
+    color: #007bff;
+    /* Cor dos ícones ao passar o mouse */
+}
